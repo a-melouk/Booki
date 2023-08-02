@@ -15,11 +15,13 @@
   <body>
     <div class="main-container">
       <header>
-        <img src="./images/logo/Booki.png" alt="Logo de Booki" srcset="./images/logo/Booki@3x.png" />
+        <div class="logo">
+          <img src="./images/logo/Booki.png" alt="Logo de Booki" srcset="./images/logo/Booki@3x.png" />
+        </div>
         <nav>
           <ul>
             <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Activites</a></li>
           </ul>
         </nav>
       </header>
@@ -162,8 +164,8 @@
                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit" />
                 <div class="card-content">
                   <div class="card-txt">
-                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                    <h3 class="card-title">Auberge la Canebière</h3>
+                    <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                   </div>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -212,40 +214,42 @@
             </div>
           </section>
         </div>
-        <div class="activites">
-          <h2>Activités à Marseille</h2>
-          <div class="activity">
-            <img src="images/activites/reno-laithienne.jpg" alt="Image montrant le Vieux-Port" />
-            <h5>Vieux-Port</h5>
-          </div>
-          <div class="activity">
-            <img src="images/activites/paul-hermann.jpg" alt="Image montrant le Fort de Pomègues" />
-            <h5>Fort de Pomègues</h5>
-          </div>
-          <div class="activity">
-            <img src="images/activites/kilyan-sockalingum.jpg" alt="Image montrant le Parc national des Calanques" />
-            <h5>Parc national des Calanques</h5>
-          </div>
-          <div class="activity">
-            <img src="images/activites/florian-wehde.jpg" alt="Image montrant Notre-Dame-de-la-Garde" />
-            <h5>Notre-Dame-de-la-Garde</h5>
+        <div class="activites-container">
+          <h1>Activités à Marseille</h1>
+          <div class="activites">
+            <div class="activite">
+              <img src="images/activites/reno-laithienne.jpg" alt="Image montrant le Vieux-Port" />
+              <h5>Vieux-Port</h5>
+            </div>
+            <div class="activite">
+              <img src="images/activites/paul-hermann.jpg" alt="Image montrant le Fort de Pomègues" />
+              <h5>Fort de Pomègues</h5>
+            </div>
+            <div class="activite">
+              <img src="images/activites/kilyan-sockalingum.jpg" alt="Image montrant le Parc national des Calanques" />
+              <h5>Parc national des Calanques</h5>
+            </div>
+            <div class="activite">
+              <img src="images/activites/florian-wehde.jpg" alt="Image montrant Notre-Dame-de-la-Garde" />
+              <h5>Notre-Dame-de-la-Garde</h5>
+            </div>
           </div>
         </div>
       </main>
       <footer>
-        <div class="about">
-          <h3>A propos</h3>
+        <div class="footer-column">
+          <h5>A propos</h5>
           <a href="#">Fonctionnement du site</a>
           <a href="#">Conditions générales</a>
           <a href="#">Données et confidentialité</a>
         </div>
-        <div class="nos-hebergements">
-          <h3></h3>
+        <div class="footer-column">
+          <h5>Nos Hébergements</h5>
           <a href="#">Charte qualité</a>
           <a href="#">Proposer votre hôtel</a>
         </div>
-        <div class="assistance">
-          <h3></h3>
+        <div class="footer-column">
+          <h5>Assistance</h5>
           <a href="#">Centre d'aide</a>
           <a href="#">Nous contacter</a>
         </div>
