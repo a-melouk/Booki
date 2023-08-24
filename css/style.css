@@ -24,7 +24,7 @@ body {
   display: flex;
   padding: 0rem 3rem;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 2.1875rem;
 }
 
@@ -120,9 +120,9 @@ body {
   margin: 0;
 }
 
-.populaires-cards .card-rating {
+/* .populaires-cards .card-rating {
   margin-bottom: 5px;
-}
+} */
 /* ---------------------------------------------------------------------- */
 
 header {
@@ -352,6 +352,7 @@ button {
 .hotel-details p {
   font-size: 0.875rem;
   font-weight: 400;
+  min-height: 40px;
 }
 
 .more h3 {
@@ -436,6 +437,7 @@ button {
 footer {
   display: flex;
   width: 100%;
+  background: var(--grey, #f2f2f2);
 }
 
 .footer-column {
@@ -462,6 +464,35 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .filter-bar {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .filter-bar p {
+    flex: 1 0 100%;
+    margin: 0;
+  }
+
+  .activite {
+    height: auto;
+  }
+
+  .activite img {
+    height: 200px;
+  }
+
+  .activite h5 {
+    padding: 5px 20px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hebergements-and-populaires section {
+    gap: 20px;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -509,9 +540,46 @@ a {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .card-rating {
+    display: flex;
+    align-items: baseline;
+    /* justify-content: stretch; */
+    margin-bottom: 5px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  body {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 30px; */
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.logo img {
+    padding: 30px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
