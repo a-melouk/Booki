@@ -69,7 +69,7 @@ body, h1, h2, h3 {
   width: 100%;
 }
 
-.nav-link:hover, .nav-link:active {
+.nav-link:hover, .nav-link:active, .nav-link.active {
   color: var(--blue, #0065FC);
   border-top: 2px solid var(--blue, #0065FC);
   box-sizing: border-box;
@@ -343,6 +343,7 @@ button:hover {
   justify-content: center;
   width: 14.29px;
   height: 13.25px;
+  font-size: 16px;
 }
 
 .more-heading {
@@ -669,7 +670,7 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     width: 100%;
   }
@@ -903,7 +904,7 @@ a {
     padding: 0;
   }
 
-  .nav-link:hover, .nav-link:active {
+  .nav-link:hover, .nav-link:active, .active {
     color: var(--blue, #0065FC);
     border: 0;
     border-bottom: 2px solid var(--blue, #0065FC);
