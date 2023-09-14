@@ -71,6 +71,7 @@ body, h1, h2, h3 {
 
 .nav-link:hover, .nav-link:active, .nav-link.active {
   color: var(--blue, #0065FC);
+  border: 0;
   border-top: 2px solid var(--blue, #0065FC);
   box-sizing: border-box;
 }
@@ -904,7 +905,7 @@ a {
     padding: 0;
   }
 
-  .nav-link:hover, .nav-link:active, .active {
+  .nav-link:hover, .nav-link:active, .nav-link.active {
     color: var(--blue, #0065FC);
     border: 0;
     border-bottom: 2px solid var(--blue, #0065FC);
